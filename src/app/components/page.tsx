@@ -12,6 +12,7 @@ import {
 import React from 'react';
 
 import Button from '@/components/buttons/Button';
+import FileUpload from '@/components/buttons/FileUpload';
 import IconButton from '@/components/buttons/IconButton';
 import TextButton from '@/components/buttons/TextButton';
 import ArrowLink from '@/components/links/ArrowLink';
@@ -21,6 +22,10 @@ import UnderlineLink from '@/components/links/UnderlineLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 import NextImage from '@/components/NextImage';
 import Skeleton from '@/components/Skeleton';
+import { CalendarForm } from '@/components/ui/CalendarForm';
+import { Input } from '@/components/ui/input';
+import LoginForm from '@/components/ui/LoginForm';
+
 
 type Color = (typeof colorList)[number];
 
@@ -428,6 +433,34 @@ export default function ComponentPage() {
               </p>
               <Skeleton className='h-72 w-72' />
             </li>
+            <li className='space-y-2'>
+              <h2 className='text-lg md:text-xl'>File upload</h2>
+              <p className={clsx('!mt-1 text-sm', textColor)}>
+                Button to handle the file input change event and update the text accordingly
+              </p>
+              <FileUpload />
+            </li>
+            <li className='space-y-2'>
+              <h2 className='text-lg md:text-xl'>Input</h2>
+              <div>
+                <Input />
+              </div>
+            </li>
+            <li className='space-y-2'>
+              <h2 className='text-lg md:text-xl'>Login form</h2>
+              <div>
+                <LoginForm />
+              </div>
+            </li>
+            <li className='space-y-2'>
+              <h2 className='text-lg md:text-xl'>Calendar</h2>
+              <div>
+                <CalendarForm />
+              </div>
+            </li>
+
+
+
           </ol>
         </div>
       </section>
