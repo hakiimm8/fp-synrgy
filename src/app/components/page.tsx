@@ -25,6 +25,7 @@ import Skeleton from '@/components/Skeleton';
 import { CalendarForm } from '@/components/ui/CalendarForm';
 import { Input } from '@/components/ui/input';
 import LoginForm from '@/components/ui/LoginForm';
+import SignUpForm from '@/components/ui/SignUpForm';
 
 
 type Color = (typeof colorList)[number];
@@ -450,6 +451,12 @@ export default function ComponentPage() {
               <h2 className='text-lg md:text-xl'>Login form</h2>
               <div>
                 <LoginForm />
+              </div>
+            </li>
+            <li className='space-y-2'>
+              <h2 className='text-lg md:text-xl'>Sign Up form</h2>
+              <div>
+                <SignUpForm />
               </div>
             </li>
             <li className='space-y-2'>
