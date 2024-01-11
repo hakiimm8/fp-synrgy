@@ -22,9 +22,9 @@ import UnderlineLink from '@/components/links/UnderlineLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 import NextImage from '@/components/NextImage';
 import Skeleton from '@/components/Skeleton';
-import { CalendarForm } from '@/components/ui/CalendarForm';
 import { Input } from '@/components/ui/input';
 import LoginForm from '@/components/ui/LoginForm';
+import { SampleDatePicker } from '@/components/ui/sample-date-picker';
 import SignUpForm from '@/components/ui/SignUpForm';
 
 
@@ -448,6 +448,12 @@ export default function ComponentPage() {
               </div>
             </li>
             <li className='space-y-2'>
+              <h2 className='text-lg md:text-xl'>Calendar</h2>
+              <div>
+                <SampleDatePicker />
+              </div>
+            </li>
+            <li className='space-y-2'>
               <h2 className='text-lg md:text-xl'>Login form</h2>
               <div>
                 <LoginForm />
@@ -459,15 +465,6 @@ export default function ComponentPage() {
                 <SignUpForm />
               </div>
             </li>
-            <li className='space-y-2'>
-              <h2 className='text-lg md:text-xl'>Calendar</h2>
-              <div>
-                <CalendarForm />
-              </div>
-            </li>
-
-
-
           </ol>
         </div>
       </section>

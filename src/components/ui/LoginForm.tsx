@@ -19,12 +19,12 @@ export default function LoginForm() {
             <Input placeholder="Password" type="password" />
             <div className="flex items-center justify-between">
               <div className="text-sm">
-                <Link className="font-medium text-indigo-600 hover:text-indigo-500" href="#">
+                <Link className="font-medium" href="#">
                   Forgot Password?
                 </Link>
               </div>
             </div>
-            <Button className="w-full bg-indigo-600 text-white">Log in</Button>
+            <Button className="w-full">Log in</Button>
           </form>
           <div className="mt-6">
             <div className="relative">
@@ -39,7 +39,6 @@ export default function LoginForm() {
               <div>
                 <Button className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
                   <span className="sr-only">Log in with Google</span>
-                  
                   Log in With Google
                 </Button>
               </div>
@@ -48,7 +47,7 @@ export default function LoginForm() {
           <div className="mt-6 text-center">
             <p className="text-sm">
             <span className="mr-2">Need an account?</span>
-              <Link className="font-medium text-indigo-600 hover:text-indigo-500" href="#">
+              <Link className="font-medium" href="#">
                 Create an account
               </Link>
             </p>
